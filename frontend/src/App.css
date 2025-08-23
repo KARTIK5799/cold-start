@@ -1,43 +1,35 @@
-@import "tailwindcss";
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Custom Components */
+@layer components {
+  .center-page {
+    @apply min-h-screen w-full flex justify-center items-center px-4;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Theme */
+@layer base {
+  :root {
+    --background: 0 0% 100%;      /* light bg */
+    --foreground: 215 25% 27%;    /* light text */
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .dark {
+    --background: 222.2 84% 4.9%; /* dark bg */
+    --foreground: 210 40% 98%;    /* dark text */
+  }
 
-.read-the-docs {
-  color: #888;
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
 }
