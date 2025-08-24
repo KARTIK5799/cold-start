@@ -2,12 +2,6 @@
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
 
-/* Custom Components */
-@layer components {
-  .center-page {
-    @apply min-h-screen w-full flex justify-center items-center px-4;
-  }
-}
 
 /* Reset */
 * {
@@ -16,17 +10,3 @@
   box-sizing: border-box;
 }
 
-/* Base Theme */
-@layer base {
-  :root {
-    --background: 0 0% 100%;      /* light bg */
-    --foreground: 215 25% 27%;    /* light text */
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%; /* dark bg */
-    --foreground: 210 40% 98%;    /* dark text */
-  }
-
-  
-}
