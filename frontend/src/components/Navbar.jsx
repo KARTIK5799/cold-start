@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="hidden lg:grid w-full h-16 grid-cols-2 items-center px-8 py-8">
+      <div className="hidden lg:grid w-full h-auto grid-cols-2 items-center px-8 py-6">
         {/* Left: Logo */}
         <div className="flex justify-start">
           <img src={Logo} alt="Cold-Start" className="h-12" />

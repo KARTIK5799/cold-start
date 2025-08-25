@@ -11,13 +11,14 @@ import CreateCampaign from './pages/CreateCampaign'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
 import Home from './pages/Home'
+import LandingPage from './pages/LandingPage'
 
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors">
       <Routes>
         {/* Public routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
