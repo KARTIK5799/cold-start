@@ -1,9 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const LandingPage = () => {
   return (
     <div>
-      <h1>Welcome to the Landing Page</h1>
+<Navbar/>
+      <div className="hero-section bg-amber-600">
+kartik sapkal
+</div> 
     </div>
   )
 }
