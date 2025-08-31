@@ -6,8 +6,8 @@ const LandingPage = () => {
     <div>
 <Navbar/>
       <div className="hero-section bg-amber-600">
-kartik
-</div>
+kartik sapkal
+</div> 
     </div>
   )
 }
